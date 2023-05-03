@@ -20,4 +20,5 @@ bot.on('message', (ctx) => {
 
 //bot.launch();  
 
-module.exports.hander = serverless(bot);
+module.exports.handler = serverless(bot);
+
