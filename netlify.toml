@@ -1,0 +1,6 @@
+[build]
+  command = "npm install && node bot.js"
+  functions = "functions"
+
+[dev]
+  command = "node bot.js"
