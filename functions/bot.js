@@ -20,5 +20,8 @@ bot.on('message', (ctx) => {
 
 //bot.launch();  
 
-module.exports.handler = serverless(bot);
+module.exports.handler = async (event, context) => {
+    console.log('function triggered');
+    return serverless(bot)(event, context);
+  };
 
