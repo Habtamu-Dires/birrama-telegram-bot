@@ -18,7 +18,7 @@ bot.on('message', (ctx) => {
     ctx.reply('Thank You. Your Order: '+ data.text);
 });
 
-//bot.launch();  
+bot.launch();  
 
 module.exports.handler = async (event, context) => {
     console.log('function triggered');
