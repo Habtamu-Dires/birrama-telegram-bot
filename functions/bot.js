@@ -1,9 +1,11 @@
 const { Telegraf } = require('telegraf');
 require('dotenv').config();
 
+const serverless = require('serverless-http');
+
 const BOT_TOKEN = process.env.BOT_TOKEN;
 
-const web_link = "https://regal-bienenstitch-f4682c.netlify.app/";
+const web_link = "https://asbeza-order-webapp-telegram.netlify.app/";
 
 const bot = new Telegraf(BOT_TOKEN);
 bot.start((ctx) => ctx.reply('Welcome',{
@@ -16,4 +18,6 @@ bot.on('message', (ctx) => {
     ctx.reply('Thank You. Your Order: '+ data.text);
 });
 
-bot.launch();
+//bot.launch();  
+
+module.exports.hander = serverless(bot);
