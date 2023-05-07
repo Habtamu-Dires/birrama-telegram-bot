@@ -2,3 +2,8 @@
   command = "npm install"
   functions = "functions"
 
+[[redirects]]
+    to='/.netlify/functions/bot/:splat'
+    from='/*'
+    status=200
+
