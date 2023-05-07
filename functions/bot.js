@@ -1,8 +1,9 @@
-require('dotenv').config();
+//require('dotenv').config();
 const { Telegraf } = require('telegraf');
 const serverless = require('serverless-http');
 
-const BOT_TOKEN = process.env.BOT_TOKEN;
+//const BOT_TOKEN = process.env.BOT_TOKEN;
+const BOT_TOKEN = '5685518421:AAHICQR0O4Wjf3JkuLHlJeIcJyGsty8UNkc';
 
 const web_link = "https://asbeza-order-webapp-telegram.netlify.app/";
 
